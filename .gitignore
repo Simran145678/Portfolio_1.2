@@ -29,6 +29,5 @@ yarn-error.log*
 !*.html
 !*.css
 !*.json
-! /public
-! /src
-!README.md
+!/public
+!/src
