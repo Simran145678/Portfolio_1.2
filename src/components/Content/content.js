@@ -19,18 +19,21 @@ import consumersenergy from "../../assets/images/Consumers_Energy_logo.svg.png";
 export const aboutCardList = [
   {
     subheading: "What I do?",
+    svg: "fa-solid fa-rocket mr-2",
     desc: `UI/UX Magic: - I specialize in turning ideas into visually stunning and user-friendly interfaces. |
         Tech Savvy: - Proficient in HTML, CSS,TailwindCSS, bootstrap and JavaScript, React andcutting-edge frameworks for dynamic web solutions. |
         Problem-Solving Pro: - I thrive on challenges, finding elegant solutions to ensure smooth user experiences.`,
   },
   {
     subheading: "Why Collaborate?",
+    svg: "fa-solid fa-ranking-star mr-2",
     desc: `User-Centric Approach: - Prioritizing user needs, I design and develop with a focus on delivering value and satisfaction.|
     Adaptability: - In a fast-paced tech landscape, I stay ahead of the curve, integrating the latest technologies to keep your projects relevant.|
     Reliable Partner: - Whether it's a solo project or a collaborative effort, I'm committed to delivering excellence.`,
   },
   {
     subheading: "Connect with Me",
+    svg: "fa-solid fa-globe mr-2",
     desc: ` :Ready to turn your digital dreams into reality? Let's collaborate
             and build something extraordinary. | Connect with Me and let the coding adventure begin!`,
   },
