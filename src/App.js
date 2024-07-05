@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 import DisplayImage from "./assets/images/Profile_P1.png";
 // Images Import
 import html from "./assets/images/html-1.svg";
@@ -17,6 +19,8 @@ import github from "./assets/images/github-icon-2.svg";
 import nodejs from "./assets/images/nodejs-icon.svg";
 import vscode from "./assets/images/visual-studio-code-1.svg";
 import figma from "./assets/images/figma-5.svg";
+import tenethealth from "./assets/images/Tenet_Health_logo.png";
+import consumersenergy from "./assets/images/Consumers_Energy_logo.svg.png";
 
 export default function App() {
   const skillsImageList = [
@@ -40,6 +44,8 @@ export default function App() {
       <Intro img={DisplayImage} />
       <About />
       <Skills img={skillsImageList} />
+      <Projects />
+      <Footer />
     </>
   );
 }
