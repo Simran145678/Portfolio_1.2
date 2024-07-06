@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "./ContactForm";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import App from "../App";
 
 export default function About(props) {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,16 +48,6 @@ export default function About(props) {
               </li>
             );
           })}
-          <Router>
-            {item.link && (
-              <Link
-                className="text-black font-bold hover:underline hover:italic"
-                to="/contact"
-              >
-                {item.link}
-              </Link>
-            )}
-          </Router>
         </ul>
       </div>
     );

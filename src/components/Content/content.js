@@ -35,8 +35,8 @@ export const aboutCardList = [
     subheading: "Let's create together",
     svg: "fa-solid fa-globe mr-2",
     desc: ` :Ready to turn your digital dreams into reality? Let's collaborate
-            and build something extraordinary. Connect with Me and let the coding adventure begin!`,
-    link: " Connect with Me and let the coding adventure begin!",
+            and build something extraordinary. |
+             Connect with Me and let the coding adventure begin!`,
   },
 ];
 
@@ -59,7 +59,7 @@ export const projectsList = [
   {
     path: tenethealth,
     title: "Front-end Developer",
-    subHeading: "As part of the ADS team on Tenethealth project I,",
+    subHeading: "As part of the ADS team on Tenethealth project, I",
     rolesNdResposibilities: `Participated in Project Planning and Requirement Analysis. |
             Developed responsive and ADA Compliant web pages using HTML,CSS, TailwindCSS, Vuejs and JavaScript. |
             Ensured cross-browser compatibility and fixed issues as they arise. |
@@ -69,7 +69,7 @@ export const projectsList = [
   {
     path: consumersenergy,
     title: "UI Developer",
-    subHeading: " As UI developer on the Consumers Energy project I,",
+    subHeading: " As UI developer on the Consumers Energy project, I",
     rolesNdResposibilities: `Implemented User Interface Design. |
             Created reusable UI components HTML, CSS, React and JavaScript.|
             Implemented and tested accessibility features such as ARIA roles. |

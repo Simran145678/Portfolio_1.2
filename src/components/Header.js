@@ -66,6 +66,14 @@ export default function Header() {
                   Projects
                 </a>
               </li>
+              <li className="mr-4 md:mr-6 transition-primary">
+                <a
+                  href="#contact"
+                  className="nav-listItem  transition-all duration-300"
+                >
+                  Contact
+                </a>
+              </li>
               <li className="mr-4 md:mr-6 -mt-1">
                 <a
                   href="https://www.linkedin.com/in/kaurharsimran05/"
@@ -74,6 +82,7 @@ export default function Header() {
                   <i className="fa-brands fa-linkedin nav-listLogo text-2xl "></i>
                 </a>
               </li>
+
               <li className="mr-4 md:mr-6 -mt-1">
                 <a href="https://github.com/Simran145678" target="_blank">
                   <i className="fa-brands fa-square-github nav-listLogo text-2xl "></i>

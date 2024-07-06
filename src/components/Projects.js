@@ -48,7 +48,7 @@ export default function Projects(props) {
       ref={ref}
       className={`${
         inView ? "opacity-1 traslate-y-0" : "opacity-0 translate-y-5"
-      } section md:pt-8 container w-screen  bg-[#fff] transition-all duration-700 ease-in-out`}
+      } md:py-8 container w-screen  bg-[#fff] transition-all duration-700 ease-in-out`}
     >
       <div className="flex flex-col  ml-auto mr-auto items-center w-5/6 border-b-4 border-yellow-500 p-6">
         <h2 className="text-5xl font-noto mx-auto text-gray-900">Experience</h2>

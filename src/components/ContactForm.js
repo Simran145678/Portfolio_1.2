@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import Header from "./Header";
+import { useInView } from "react-intersection-observer";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -39,18 +39,31 @@ export default function ContactForm() {
       });
   };
 
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation once
+    threshold: 0.5, // Trigger animation when 50% of the component is in view
+  });
+
   return (
-    <>
-      <Header />
-      <div className=" w-full h-screen ">
-        <div className="bubble-img-1 "></div>
-        <div className="bubble-img-2 absolute"></div>
+    <section
+      id="contact"
+      ref={ref}
+      className={` ${
+        inView ? "opacity-1 traslate-y-0" : "opacity-0 translate-y-5"
+      } bg-yellow-100 transition-all duration-700 ease-in-out py-12`}
+    >
+      <div className="container w-full h-full ">
+        <div className="bubble-img-1 hidden lg:block"></div>
+        <div className="bubble-img-2 absolute hidden lg:block"></div>
 
         <form
           onSubmit={handleSubmit}
-          className="contact-form flex flex-col justify-center items-center -mt-16 w-full"
+          className="contact-form flex flex-col justify-center items-center lg:-mt-16 w-full"
         >
-          <div className="w-1/3">
+          <h3 className=" text-2xl font-noto font-bold -translate-y-6 bg-yellow-300 inline-block">
+            Contact me
+          </h3>
+          <div className="px-6 lg:px-0 w-full lg:w-1/3">
             <label className=" font-nonito text-gray-800 pb-2 w-full">
               Name:
               <input
@@ -107,6 +120,6 @@ export default function ContactForm() {
           </div>
         </form>
       </div>
-    </>
+    </section>
   );
 }

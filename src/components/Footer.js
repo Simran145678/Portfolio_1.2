@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer(props) {
   return (
-    <footer className="font-noto flex flex-col justify-between bg-yellow-500 border-t-4  border-yellow-300   mt-24">
-      <div className="footer-content flex flex-col justify-between md:flex-row p-6 md:p-16">
+    <footer className="font-noto flex flex-col justify-between bg-yellow-500 border-t-4  border-yellow-300   ">
+      <div className="container footer-content flex flex-col justify-between md:flex-row p-6 md:p-16">
         <div className="w-44 md:w-auto logo leading-tight relative cursor-pointer">
           <p className="font-bold text-xl leading-tight  z-20 border-b-2 border-gray-800">
             harsimran kaur{" "}
