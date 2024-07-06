@@ -1,6 +1,6 @@
 # Portfolio Project
 
-Welcome to my portfolio project! This project is built using React and TailwindCSS. It showcases various skills and techniques including hooks, props, animations, state management, and email handling. Below you'll find a detailed overview of the project and instructions on how to set it up and run it locally.
+Welcome to my portfolio project! This project is built using React and TailwindCSS. It showcases various skills and techniques including hooks, props, animations, state management, and email handling.
 
 ### Features
 
