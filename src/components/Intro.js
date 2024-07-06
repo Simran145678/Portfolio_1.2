@@ -5,9 +5,9 @@ export default function Intro(props) {
     <section id="intro">
       <div className="bg-yellow-100   w-screen overflow-hidden font-nunito">
         <div className="container flex flex-col md:flex-row md:p-10 lg:p-20 xl:p-24 ">
-          <div className="bubble-imgs pt-20 md:pt-0 w-full md:w-1/2">
-            <div className="rounded-full bg-yellow-500 w-60 h-60 -mt-24 ml-4"></div>
-            <div className="rounded-full bg-yellow-300 w-44 h-44 -ml-12 -mt-16  "></div>
+          <div className="pt-20 md:pt-0 w-full md:w-1/2">
+            <div className="bubble-img-1"></div>
+            <div className="bubble-img-2"></div>
             <img
               src={props.img}
               alt=" Harsimran's Headshot"
@@ -26,9 +26,9 @@ export default function Intro(props) {
               to life with user centered approach.
               <br></br>
               <br></br>
-              With passion for creating seamless & engaging online experiences I
-              am committed to ensuring that your audience enjoys every click,
-              scroll and interaction on your website.
+              With a passion for creating seamless & engaging online
+              experiences, I am committed to ensuring that your audience enjoys
+              every click, scroll and interaction on your website.
             </h1>
           </div>
         </div>

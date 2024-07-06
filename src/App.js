@@ -5,6 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 import {
   aboutCardList,
   skillsImageList,

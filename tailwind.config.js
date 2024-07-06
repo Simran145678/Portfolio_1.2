@@ -41,6 +41,9 @@ module.exports = {
         // Bounces 5 times 1s equals 5 seconds
         "bounce-short": "bounce 1s ease-in-out 5",
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [require("tailwindcss-animated")],

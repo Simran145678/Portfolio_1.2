@@ -30,7 +30,7 @@ export default function Header() {
       >
         <div className="container  flex flex-col md:flex-row justify-between items-center">
           <a href="#intro">
-            <div className="logo leading-tight relative cursor-pointer hover:scale-105 transition-all duration-300">
+            <div className="logo leading-tight relative cursor-pointer transition-primary">
               <p className="font-bold text-xl leading-tight  z-20 border-b-2 border-gray-800">
                 harsimran kaur
               </p>
@@ -42,26 +42,26 @@ export default function Header() {
           </a>
           <div className="nav-list">
             <ul className="flex pt-6 md:pt-0">
-              <li className="mr-4 md:mr-6 hover:scale-105 transition-all duration-300">
+              <li className="mr-4 md:mr-6 transition-primary">
                 <a
                   href="#about"
-                  className="hover:border-b-2 hover:border-yellow-500 hover:text-gray-800  transition-all duration-300"
+                  className="nav-listItem  transition-all duration-300"
                 >
                   About
                 </a>
               </li>
-              <li className="mr-4 md:mr-6 hover:scale-105 transition-all duration-300">
+              <li className="mr-4 md:mr-6 transition-primary">
                 <a
                   href="#skills"
-                  className="hover:border-b-2 hover:border-yellow-500 hover:text-gray-800  transition-all duration-300"
+                  className="nav-listItem  transition-all duration-300"
                 >
                   Skills
                 </a>
               </li>
-              <li className="mr-4 md:mr-6 hover:scale-105 transition-all duration-300">
+              <li className="mr-4 md:mr-6 transition-primary">
                 <a
                   href="#projects"
-                  className="hover:border-b-2 hover:border-yellow-500 hover:text-gray-800  transition-all duration-300"
+                  className="nav-listItem  transition-all duration-300"
                 >
                   Projects
                 </a>
@@ -70,18 +70,13 @@ export default function Header() {
                 <a
                   href="https://www.linkedin.com/in/kaurharsimran05/"
                   target="_blank"
-                  className="text-2xl hover:underline"
                 >
-                  <i className="fa-brands fa-linkedin hover:text-yellow-500 hover:scale-125 transition-all duration-300"></i>
+                  <i className="fa-brands fa-linkedin nav-listLogo text-2xl "></i>
                 </a>
               </li>
               <li className="mr-4 md:mr-6 -mt-1">
-                <a
-                  href="https://github.com/Simran145678"
-                  target="_blank"
-                  className="text-2xl hover:underline"
-                >
-                  <i className="fa-brands fa-square-github hover:text-yellow-500 hover:scale-125 transition-all duration-300"></i>
+                <a href="https://github.com/Simran145678" target="_blank">
+                  <i className="fa-brands fa-square-github nav-listLogo text-2xl "></i>
                 </a>
               </li>
             </ul>

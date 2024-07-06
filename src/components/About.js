@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ContactForm from "./ContactForm";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 export default function About(props) {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,6 +32,11 @@ export default function About(props) {
           <i className={item.svg}></i>
           {item.subheading}
         </h3>
+
+        {/* <Routes>
+            <Route path="/contact" element={<ContactForm />} />
+          </Routes> */}
+
         <ul className="list-disc ml-6 ">
           {item.desc.split("|").map((listItem) => {
             const splitDesc = listItem.split(":");
@@ -40,6 +47,16 @@ export default function About(props) {
               </li>
             );
           })}
+          <Router>
+            {item.link && (
+              <Link
+                className="text-black font-bold hover:underline hover:italic"
+                to="/contact"
+              >
+                {item.link}
+              </Link>
+            )}
+          </Router>
         </ul>
       </div>
     );
@@ -52,7 +69,7 @@ export default function About(props) {
     >
       <div
         id="animated-component"
-        className={`container  reveal flex flex-col ml-auto mr-auto items-center w-5/6 border-4 border-yellow-100 p-4 transition-all delay-300 duration-1000 ease-in-out
+        className={`container flex flex-col ml-auto mr-auto items-center w-5/6 border-4 border-yellow-100 p-4 transition-all delay-300 duration-1000 ease-in-out
       ${isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0 "} `}
       >
         <h2

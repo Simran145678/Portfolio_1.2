@@ -47,18 +47,18 @@ export default function Projects(props) {
       id="projects"
       ref={ref}
       className={`${
-        inView ? "opacity-1 traslate-y-0" : "opacity-0 translate-y-10"
-      } section md:pt-8 container w-screen  bg-[#fff] transition-all duration-1000 ease-in-out`}
+        inView ? "opacity-1 traslate-y-0" : "opacity-0 translate-y-5"
+      } section md:pt-8 container w-screen  bg-[#fff] transition-all duration-700 ease-in-out`}
     >
       <div className="flex flex-col  ml-auto mr-auto items-center w-5/6 border-b-4 border-yellow-500 p-6">
-        <h2 className="text-5xl font-noto mx-auto text-gray-900">Projects</h2>
+        <h2 className="text-5xl font-noto mx-auto text-gray-900">Experience</h2>
       </div>
       <div className="reveal flex flex-col p-6 ml-auto mr-auto items-center w-5/6 mb-8">
         <p className="lg:px-10 leading-relaxed text-center text-gray-800">
           With over 2 years of web development experience, I've mastered HTML,
-          CSS, and JavaScript, excelling in front-end frameworks like React and
-          Vue. Proficient in Git and GitHub, I've collaborated in agile
-          environments and maintained code quality, performance and scalability.
+          CSS, and JavaScript, excelling in front-end frameworks like React.
+          Proficient in Git and GitHub, I've collaborated in agile environments
+          and maintained code quality, performance and scalability.
         </p>
       </div>
 
