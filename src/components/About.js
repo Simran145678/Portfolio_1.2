@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function About(props) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const elementPosition =
+        document.getElementById("animated-component").offsetTop;
+
+      if (scrollPosition > elementPosition) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const aboutCard = props.list.map((item) => {
     return (
-      <div className=" sm:w-3/4 p-2  bg-yellow-100 rounded-xl my-4 shadow-100 shadow-yellow-100 ">
+      <div
+        className="sm:w-3/4 p-2 bg-yellow-100 rounded-xl my-4 shadow-100 shadow-yellow-100  
+        "
+      >
         <h3 className=" text-xl font-noto font-bold -translate-y-6 bg-yellow-300 inline-block">
           <i className={item.svg}></i>
           {item.subheading}
@@ -28,7 +50,11 @@ export default function About(props) {
       id="about"
       className=" section font-nunito  w-screen bg-yellow-500 p-6 md:p-20  mx-auto"
     >
-      <div className="container  reveal flex flex-col ml-auto mr-auto items-center w-5/6 border-4 border-yellow-100 p-4">
+      <div
+        id="animated-component"
+        className={`container  reveal flex flex-col ml-auto mr-auto items-center w-5/6 border-4 border-yellow-100 p-4 transition-opacity delay-300 duration-1000 ease-in-out
+      ${isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0 "} `}
+      >
         <h2
           id="about-heading"
           className="font-noto text-6xl mx-auto text-gray-900 "
@@ -41,7 +67,6 @@ export default function About(props) {
           immersive and intuitive web experiences that leave a lasting
           impression.
         </p>
-
         {aboutCard}
       </div>
     </section>

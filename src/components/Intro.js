@@ -16,7 +16,7 @@ export default function Intro(props) {
             />
           </div>
 
-          <div className="intro font-nunito w-full md:w-1/2 p-4 flex items-center animate-fade animate-once animate-duration-1000 animate-delay-500 animate-ease-linear">
+          <div className="intro font-nunito w-full md:w-1/2 p-4 flex items-center animate-fade-down animate-once animate-duration-1000 animate-delay-500 animate-ease-linear">
             <h1 className="text-gray-800 md:text-lg xl:text-xl  leading-relaxed">
               Hello, I'm
               <span className="font-noto text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-900 bg-yellow-300">
@@ -26,7 +26,7 @@ export default function Intro(props) {
               to life with user centered approach.
               <br></br>
               <br></br>
-              With passion for creating seemless & engaging online experiences I
+              With passion for creating seamless & engaging online experiences I
               am committed to ensuring that your audience enjoys every click,
               scroll and interaction on your website.
             </h1>
