@@ -1,6 +1,12 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Projects(props) {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation once
+    threshold: 0.5, // Trigger animation when 50% of the component is in view
+  });
+
   const projectCard = props.list.map((item) => {
     return (
       <div className="container w-5/6 flex flex-col   p-6 md:px-24 lg:px-40">
@@ -39,9 +45,12 @@ export default function Projects(props) {
   return (
     <section
       id="projects"
-      className=" section md:pt-8 container w-screen  bg-[#fff]"
+      ref={ref}
+      className={`${
+        inView ? "opacity-1 traslate-y-0" : "opacity-0 translate-y-10"
+      } section md:pt-8 container w-screen  bg-[#fff] transition-all duration-1000 ease-in-out`}
     >
-      <div className="reveal flex flex-col  ml-auto mr-auto items-center w-5/6 border-b-4 border-yellow-500 p-6">
+      <div className="flex flex-col  ml-auto mr-auto items-center w-5/6 border-b-4 border-yellow-500 p-6">
         <h2 className="text-5xl font-noto mx-auto text-gray-900">Projects</h2>
       </div>
       <div className="reveal flex flex-col p-6 ml-auto mr-auto items-center w-5/6 mb-8">

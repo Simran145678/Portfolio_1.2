@@ -52,7 +52,7 @@ export default function About(props) {
     >
       <div
         id="animated-component"
-        className={`container  reveal flex flex-col ml-auto mr-auto items-center w-5/6 border-4 border-yellow-100 p-4 transition-opacity delay-300 duration-1000 ease-in-out
+        className={`container  reveal flex flex-col ml-auto mr-auto items-center w-5/6 border-4 border-yellow-100 p-4 transition-all delay-300 duration-1000 ease-in-out
       ${isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0 "} `}
       >
         <h2

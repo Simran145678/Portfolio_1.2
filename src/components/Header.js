@@ -84,9 +84,6 @@ export default function Header() {
                   <i className="fa-brands fa-square-github hover:text-yellow-500 hover:scale-125 transition-all duration-300"></i>
                 </a>
               </li>
-              <li className="mr-2 md:ml-8 font-bold hover:border-b-2 hover:border-yellow-500 hover:scale-125 hover:text-gray-800 transition-all duration-300">
-                Resume
-              </li>
             </ul>
           </div>
         </div>
