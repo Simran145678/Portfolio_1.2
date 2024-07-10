@@ -28,3 +28,6 @@ npm (Node Package Manager) or yarn
 #### Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+#### Link to live site
+https://kaurharsimran0508.netlify.app/
